@@ -8,10 +8,13 @@ header {
 .opening,
 .feature {
   display: flex;
+  padding: 3%;
 }
 
 h2 {
   text-align: center;
+  margin: 0;
+  background-color: rgb(222, 190, 222);
 }
 ul {
   padding: 0%;
