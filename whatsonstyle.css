@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    background-color: rgb(222, 190, 222);
+    padding: 3px;
+}
+
+.nowShowing,
+.opening,
+.feature {
+    display: flex;
+}
+
+ul {
+    padding: 0%;
+}
+
+li {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-link {
+    color: black;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+footer {
+    margin-left: 15px;
+}

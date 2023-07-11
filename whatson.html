@@ -6,53 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's On</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./whatsonstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1> What's On </h1>
-
-        <nav>
-            <img src="./images/star.png" alt="picture of a star" width="60">
-            <li> Home</li>
-            <li> What's On</li>
-            <li> Sign Up</li>
-        </nav>
+        <main class="container h-100 d-flex flex-column">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <div class="d-flex">
+                        <img class="navbar-brand" src="images/star.png" alt="logo" width="35" height="45">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                        <a class="nav-link" href="./whatson.html">What's On</a>
+                        <a class="nav-link" href="./signUp.html">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
     </header>
-    <main>
 
-
-        <h2> Movies now showing!</h2>
-        <!-- <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/minions_poster.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/Spiderman_poster.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/megamind_poster.jpeg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-        <div class="nowShowing">
+    <div class="nowShowing" style="padding: 1px 1px 1px 1px; align-items:stretch;">
+        <div class="col-md-9">
             <img src="./images/minions_poster.jpeg" alt="minions film poster" width="175">
             <img src="./images/Spiderman_poster.jpeg" alt="spiderman film poster" width="250">
             <img src="./images/megamind_poster.jpeg" alt="megamind film poster" width="175">
 
-            <p> Now showing:
+        </div>
+        <div class="col-md-3">
+            <p style="font-size:larger"> Now showing:
                 <li> Spiderman (with Tobey Macguire) </li>
                 <li> Spiderman 2 </li>
                 <li> Spiderman 3</li>
@@ -60,24 +42,41 @@
                 <li> Toy Story </li>
             </p><br>
         </div>
+    </div>
 
-        <div class="opening">
-            <p> Opening Times:
-                Monday-Thursday 11:00 - 22:00
-                Friday-Saturday 11:00 - 01:00
-                Sunday 11:00 - 10:00
-            </p>
-            <img src="./images/Popcorn.webp" alt="picture of popcorn" width="275">
+    <div class="opening" style="padding: 1px 1px 1px 1px; align-items:stretch;">
+        <div class="col-md-6"><br>
+            <p class="bold"> Opening Times:<br></p>
+            Monday-Thursday 11:00 - 22:00<br>
+            Friday-Saturday 11:00 - 01:00<br>
+            Sunday 11:00 - 10:00
+
         </div>
+        <div class="col-md-6">
+            <img src="https://ag.purdue.edu/news/2020/02/_media/popcorn-banner-2-1.jpg" alt="picture of popcorn"
+                width="450" style="margin-bottom: 15px">
+        </div>
+    </div>
 
-        <div class="feature">
-            <img src="" alt="" />
+    <br>
+    <h2> Movies now showing!</h2><br>
 
-            <p>Movie Title </p>
-
-            <p> Movie Synopsis </p>
-
-            <p> Contact us for screens and showing times:</p>
+    <div class="feature">
+        <div class="col-md-3">
+            <img src="./images/greatest_showman_film_poster.jpeg" alt="greatest showman film poster" width="150" />
+        </div>
+        <div class="col-md-3">
+            <h4> The Greatest Showman </h4>
+        </div>
+        <div class="col-md-3">
+            <p> Growing up in the early 1800s, P.T. Barnum displays a natural talent for publicity and promotion,
+                selling lottery tickets by age 12. After trying his hands at various jobs<a
+                    href="https://www.imdb.com/title/tt1485796/plotsummary/">...
+                </a>
+            </p>
+        </div>
+        <div class="col-md-3">
+            <p class="bold"> Contact us for screens and showing times:</p>
             <ul>
                 <li> Standard </li>
                 <li> 3D </li>
@@ -85,15 +84,14 @@
                 <li> Super IMAX </li>
             </ul>
         </div>
-    </main>
-    <footer>
-        Follow us on
-        <ul>
-            <li> Facebook</li>
-            <li> Twitter</li>
-            <li> Instagram </li>
-        </ul>
-        &copy; Group 2 Baljit & Livvy
+    </div>
+    </main><br>
+    <footer class="footer  text-center">
+        Follow us on:
+        <img src="./images/facebook_icon.png" width="20"> Facebook
+        <img src="./images/twitter.png" width="20"> Twitter </li>
+        <img src="./images/instagram.jpeg" width="20"> Instagram </li><br>
+        &copy; DF Cinemas 2023 (Group 2: Baljit, Livvy & Angie)
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
