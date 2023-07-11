@@ -13,8 +13,6 @@ header {
 
 h2 {
   text-align: center;
-  margin: 0;
-  background-color: rgb(222, 190, 222);
 }
 ul {
   padding: 0%;
@@ -24,6 +22,10 @@ li {
   list-style: none;
   padding: 0%;
   margin: 0%;
+}
+
+.feature {
+  background: -webkit-linear-gradient(rgb(222, 190, 222), rgb(103, 82, 103));
 }
 
 .nav-link {
