@@ -1,5 +1,9 @@
 const validColor = '#ced4da';
 const invalidColor = 'red';
+
+const firstNameValid = false;
+
+
 $(document).ready(function () {
     $('#firstName').on('input', function () {
         const firstName = $('#firstName').val();
@@ -9,6 +13,7 @@ $(document).ready(function () {
         } else {
             $('#firstNameFeedback').hide();
             $('#firstName').css('border-color', validColor);
+            firstNameValid = true;
         }
     });
 
@@ -31,6 +36,28 @@ $(document).ready(function () {
         } else {
             $('#emailFeedback').hide();
             $('#email').css('border-color', validColor);
+        }
+    });
+
+    // $('#form input,select').change(function () {
+    //     $('#submitButton').removeAttr("disabled");
+    // })
+
+    (function () {
+
+        // $('form > input').keyup(function () {
+
+        //     var empty = false;
+        //     $('form > input').each(function () {
+        //         if ($(this).val() == '') {
+        //             empty = true;
+        //         }
+        //     });
+
+        if (!firstNameValid) {
+            $('#submitButton').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+        } else {
+            $('#submitButton').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
         }
     });
 });
